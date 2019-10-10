@@ -6,4 +6,21 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <p>{{ testUser.name }} ({{ testUser.email }})</p>
+  <h2>マップ</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let map of testMaps">
+        <td>{{ map.id }}</td>
+        <td>{{ map.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+</ion-content>
